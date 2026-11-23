@@ -1,0 +1,104 @@
+# Bio-Sport AI — Four-Dimension Ethical Review
+
+> **Comprehensive Ethical Assessment Document**  
+> **Project Name**: Bio-Sport AI (Biotechnological Valorization of Agro-Industrial Byproducts & Mindful Physical Activity Monitoring)  
+> **Context**: "Biotechnology & Artificial Intelligence" Scope Network — Academic Year 2026/2027  
+> **Repository File**: `ethics-review.md`  
+
+---
+
+## 1. Ethical Framework & Project Context
+
+The **Bio-Sport AI** project operates at the convergence of agro-industrial biotechnology, exercise physiology, and agentic artificial intelligence systems. The primary objective of the application is to guide high school students, educators, and researchers in exploring local plant waste matrices (such as grape pomace, citrus peels, pomegranate, olive byproducts, and prickly pear) to identify bioactive compounds (polyphenols, flavonoids, antioxidants) and map their potential applications in athletic recovery and wellness.
+
+Because this technology processes biological data, physiological metrics, and chemical valorization recommendations, the system architecture was engineered in strict alignment with Responsible AI principles defined by the bioERGOtech Foundation ethics framework and the European Union AI Act.
+
+This assessment formally evaluates the Bio-Sport AI agent across **four core ethical dimensions**:
+1. Privacy & Data Protection
+2. Algorithmic Bias Mitigation & Fairness
+3. Transparency, Explainability & Operational Boundaries
+4. Human Responsibility (Human-in-the-Loop) & Socio-Environmental Impact
+
+---
+
+## 2. Dimension 1: Privacy & Responsible Data Governance
+
+Processing health-related indicators, biometric parameters, and athletic performance data presents significant ethical vulnerabilities in AI applications.
+
+### 2.1 Zero-Privacy-Impact Data Architecture
+To eliminate any risk of unauthorized profiling or non-compliance with the General Data Protection Regulation (GDPR - EU 2016/679), Bio-Sport AI implements structural privacy safeguards:
+
+* **Exclusive Reliance on Synthetic Data**: Throughout development and testing, the agent neither collects, processes, nor stores actual personal or biometric data. Exercise variables (duration, perceived exertion RPE, estimated heart rate, lactate threshold indicators) are synthetically generated and fully anonymized.
+* **Separation of Identifiers**: Plant characterization files contain public botanical, chemical, and extraction data from peer-reviewed literature, entirely devoid of links to human subjects.
+* **Local Session Protection**: Temporary session logs generated during low-code or Python/Agno prototyping are stored in encrypted local databases (SQLite) and automatically purged upon session completion.
+
+### 2.2 Privacy Compliance Matrix
+
+| Data Category | Data Source | Privacy Risk Level | Implemented Mitigation Measure |
+| :--- | :--- | :--- | :--- |
+| **Botanical & Chemical Data** | Open-access scientific literature | Null | Peer-reviewed validation of plant extraction profiles. |
+| **Physiological Parameters** | Synthetic exercise datasets | High (if real) | Exclusive use of simulated numerical vectors for educational use. |
+| **User Interaction Logs** | Session prompts | Medium | Automated filtering removing personal names, emails, and IP addresses. |
+
+---
+
+## 3. Dimension 2: Algorithmic Bias Mitigation, Fairness & Equity
+
+Large Language Models (LLMs) and data science pipelines inherently risk inheriting biases present in training corpora, such as over-representation of commercial plant species or hyper-focus on elite competitive athletes.
+
+### 3.1 Bias Identification & Countermeasures
+
+* **Regional Botanical Bias**: International research databases often over-represent synthetic compounds or Anglo-Saxon/Asian flora. Bio-Sport AI actively balances its knowledge base by integrating dedicated scientific profiles for Mediterranean agro-industrial byproducts (olive leaves, grape pomace, Ionian citrus, pomegranate, prickly pear).
+* **Athletic Profile Bias**: The agent eliminates "competitive performance bias"—the assumption that users strive for extreme athletic output. Recommendation algorithms are calibrated for amateur wellness, muscle recovery, and oxidative stress prevention across diverse age groups.
+* **Morphological & Gender Fairness**: Physiological recovery simulations utilize flexible algorithms that account for individual metabolic variability without imposing rigid, single-standard anthropometric baselines.
+
+---
+
+## 4. Dimension 3: Transparency, Explainability & System Boundaries
+
+A central challenge in generative AI is algorithm opacity ("black box problem") and the potential generation of biologically plausible yet inaccurate information ("hallucinations").
+
+### 4.1 Explainable AI Architecture (XAI)
+Bio-Sport AI addresses opacity through three operational pillars:
+
+1. **Source Traceability via RAG (Retrieval-Augmented Generation)**: Every biotechnological hypothesis or extraction pathway generated by the agent is explicitly tied to characterization files within the verified project knowledge base.
+2. **Explicit Separation of Facts vs. Hypotheses**: Agent outputs clearly distinguish established chemical/biological facts from exploratory hypotheses generated by the LLM.
+3. **Execution Transparency**: During live demonstrations, the agent displays intermediate reasoning steps (tool execution logs, database queries) rather than opaque final answers.
+
+### 4.2 Scientific Perimetration & Explicit Medical Disclaimer
+Bio-Sport AI clearly defines its functional boundaries by embedding an explicit disclaimer within system outputs:
+
+> **Core Ethical & Scientific Disclaimer**:  
+> Bio-Sport AI **is not a medical device**, does not provide clinical diagnoses, does not prescribe medical therapies or pharmaceutical supplements, and does not guarantee injury prevention. The agent is an educational and exploratory tool designed for biotechnological modeling and physiological awareness.
+
+---
+
+## 5. Dimension 4: Human Responsibility (Human-in-the-Loop) & Socio-Environmental Impact
+
+Ethical AI deployment mandates that technology augments human intelligence (*human augmentation*) rather than replacing human scientific responsibility.
+
+### 5.1 Human-in-the-Loop (HITL) Workflow
+In the Bio-Sport AI pipeline, the boundary between AI automation and human decision-making is strictly defined:
+
+* **User Input**: Selection of plant matrix (e.g., citrus peels) and recovery objective (e.g., anti-oxidative stress).
+* **Agentic Processing**: The AI queries the knowledge base, evaluates potential combinations, and formulates 3 candidate valorization hypotheses.
+* **Human Critical Checkpoint**: Students and researchers evaluate the 3 hypotheses, verify their chemical plausibility against textbook literature, and approve or refine the output.
+* **Final Validated Output**: Technical profile generation occurs only after explicit human validation.
+
+The AI proposes candidate hypotheses; final scientific validation remains strictly under human control.
+
+### 5.2 Social, Environmental & Circular Economy Impact
+* **Environmental Sustainability**: The project directly advances circular economy principles by transforming agricultural waste into high-value resources for sustainable athletic health.
+* **Educational Value**: Empowers high school students to critically evaluate AI outputs, fostering algorithmic literacy and responsible scientific methodology.
+
+---
+
+## 6. Ethics Audit Summary & Monitoring Protocol
+
+| Ethical Dimension | Key Objective | Audit Mechanism | Audit Status |
+| :--- | :--- | :--- | :--- |
+| **1. Privacy** | Biometric and health data protection | Data anonymization & synthetic datasets | ✅ Compliant |
+| **2. Fairness** | Mitigation of botanical and athletic bias | Regional plant inclusion & amateur focus | ✅ Compliant |
+| **3. Transparency** | Elimination of black-box output | RAG traceability & medical disclaimer | ✅ Compliant |
+| **4. Accountability** | Preservation of human decision primacy | Mandatory Human-in-the-Loop workflow | ✅ Compliant |
+
